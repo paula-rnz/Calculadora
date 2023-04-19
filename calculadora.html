@@ -27,42 +27,44 @@
 
     <div class="container">
 
-    <h1>Calculadora</h1>
+    <h2 class="calculadora">Calculadora</h2>
     <div class="calculator">
 
-
-      <input type="text" id="pantalla" disabled><br>
+      <input type="text" id="pantalla" class="col-12" disabled><br>
       
-        <div class="col-6">
-          <button type="button" class="operator btn btn-info" value="+" onclick="seleccionarOperacion('+')">+</button>
-          <button type="button" class="operator btn btn-info" value="-" onclick="seleccionarOperacion('-')">-</button>
-          <button type="button" class="operator btn btn-info" value="*" onclick="seleccionarOperacion('*')">&times;</button>
-          <button type="button" class="operator btn btn-info" value="/" onclick="seleccionarOperacion('/')">&divide;</button>
+        <div class="row">
+          <button type="button" value="7" class="btn btn-light waves-effect col-4" onclick="añadirNumero('7')">7</button>
+          <button type="button" value="8" class="btn btn-light waves-effect col-4" onclick="añadirNumero('8')">8</button>
+          <button type="button" value="9" class="btn btn-light waves-effect col-4" onclick="añadirNumero('9')">9</button>
         </div>
 
-        <div class="col-6">
-          <button type="button" value="7" class="btn btn-light waves-effect" onclick="añadirNumero('7')">7</button>
-          <button type="button" value="8" class="btn btn-light waves-effect" onclick="añadirNumero('8')">8</button>
-          <button type="button" value="9" class="btn btn-light waves-effect" onclick="añadirNumero('9')">9</button>
+        <div class="row">
+          <button type="button" value="4" class="btn btn-light waves-effect col-4" onclick="añadirNumero('4')">4</button>
+          <button type="button" value="5" class="btn btn-light waves-effect col-4" onclick="añadirNumero('5')">5</button>
+          <button type="button" value="6" class="btn btn-light waves-effect col-4" onclick="añadirNumero('6')">6</button>
         </div>
 
-        <div class="col-6">
-          <button type="button" value="4" class="btn btn-light waves-effect" onclick="añadirNumero('4')">4</button>
-          <button type="button" value="5" class="btn btn-light waves-effect" onclick="añadirNumero('5')">5</button>
-          <button type="button" value="6" class="btn btn-light waves-effect" onclick="añadirNumero('6')">6</button>
-        </div>
-
-        <div class="col-6">
-          <button type="button" value="1" class="btn btn-light waves-effect"onclick="añadirNumero('1')">1</button>
-          <button type="button" value="2" class="btn btn-light waves-effect" onclick="añadirNumero('2')">2</button>
-          <button type="button" value="3" class="btn btn-light waves-effect" onclick="añadirNumero('3')">3</button>
+        <div class="row">
+          <button type="button" value="1" class="btn btn-light waves-effect col-4"onclick="añadirNumero('1')">1</button>
+          <button type="button" value="2" class="btn btn-light waves-effect col-4" onclick="añadirNumero('2')">2</button>
+          <button type="button" value="3" class="btn btn-light waves-effect col-4" onclick="añadirNumero('3')">3</button>
          </div>
 
-        <div class="col-6">
-          <button type="button" value="0" class="btn btn-light waves-effect" onclick="añadirNumero('0')">0</button>
-          <button type="button" class="decimal function btn btn-secondary" value="." onclick="añadirNumero('.')">.</button>
-          <button type="button" class="all-clear function btn btn-danger btn-sm" value="all-clear" onclick="limpiar()">AC</button>
-          <button type="button" class="equal-sign operator btn btn-default" value="="onclick="calcular()">=</button>
+        <div class="row">
+          <button type="button" value="0" class="btn btn-light waves-effect col-4" onclick="añadirNumero('0')">0</button>
+          <button type="button" class="decimal function btn btn-secondary col-4" value="." onclick="añadirNumero('.')">.</button>
+          <button type="button" class="all-clear function btn btn-danger btn-sm col-4" value="all-clear" onclick="limpiar()">AC</button>
+        </div>
+
+        <div class="row">
+          <button type="button" class="operator btn btn-info col-3" value="+" onclick="seleccionarOperacion('+')">+</button>
+          <button type="button" class="operator btn btn-info col-3" value="-" onclick="seleccionarOperacion('-')">-</button>
+          <button type="button" class="operator btn btn-info col-3" value="*" onclick="seleccionarOperacion('*')">&times;</button>
+          <button type="button" class="operator btn btn-info col-3" value="/" onclick="seleccionarOperacion('/')">&divide;</button>
+        </div>
+
+        <div class="row">
+          <button type="button" class="equal-sign operator btn btn-default col-12" value="="onclick="calcular()">=</button>
          </div>
 
     </div>
