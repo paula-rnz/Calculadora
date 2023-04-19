@@ -1,0 +1,24 @@
+.container{
+  max-width: 500px;
+  min-width: 100px;
+}
+
+.calculadora {
+  text-align: center;
+}
+
+.operator {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.function {
+  background-color: #e9ecef;
+  color: #343a40;
+}
+
+.equal-sign {
+  background-color: #28a745;
+  color: #fff;
+  grid-column: span 2;
+}
